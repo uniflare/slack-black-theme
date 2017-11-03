@@ -183,6 +183,9 @@ a.sidebar_menu_list_item {
 .attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name a,.attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name span {
 	color:var(--text-special);
 }
+.bot_message .message_sender,.bot_message .message_sender a {
+	color:var(--text-special);
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
