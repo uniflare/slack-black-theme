@@ -15,25 +15,124 @@ limitations under the License.
 */
 
 :root {
-   /* Modify these to change your theme colors: */
-   --primary: #09F;
-   --text: #DDD;
-   --background: #111;
-   --background-elevated: #222;
+      /* Modify these to change your theme colors: */
+    --primary: #78a2bf;
+    --text: #9b9b9b;
+    --background: #1e1e1e;
+    --background-elevated: #252526;
+    
+    --background-hover: rgba(255, 255, 255, 0.1);
+    --background-light: #1e1e1e;
+    --background-bright: #252526;
 
-   /* These should be less important: */
-   --background-hover: rgba(255, 255, 255, 0.1);
-   --background-light: #AAA;
-   --background-bright: #FFF;
+    --border-dim: #666;
+    --border-bright: var(--primary);
 
-   --border-dim: #666;
-   --border-bright: var(--primary);
+    --text-bright: #d9d9d9;
+    --text-special: var(--primary);
 
-   --text-bright: #FFF;
-   --text-special: var(--primary);
+    --scrollbar-background: #000;
+    --scrollbar-border: var(--primary);
+}
 
-   --scrollbar-background: #000;
-   --scrollbar-border: var(--primary);
+/* Extra Custom */
+.msg_inline_attachment_collapser,.msg_inline_attachment_expander,.msg_inline_img_collapser,.msg_inline_img_expander,.msg_inline_media_toggler,.msg_inline_room_preview_collapser,.msg_inline_room_preview_expander {
+	color:var(--primary);
+}
+#team_menu_user {
+	color:var(--text);
+}
+.p-apps_browser__app_limit_meter b {
+	color:var(--text) !important;
+}
+.p-apps_browser__category_header {
+	background: var(--background-light) !important;
+    color: var(--text) !important;
+}
+.btn_outline.hover,.btn_outline:focus,.btn_outline:hover {
+	color:var(--primary) !important;
+}
+.p-shortcuts_flexpane__title {
+	color: var(--text) !important;
+}
+.p-shortcuts_flexpane__shortcut_title {
+	color: var(--text) !important;
+}
+#message_edit_container .message_input {
+	background:var(--background-elevated);
+	color:var(--text-bright);
+}
+.slack_menu_download{
+	background-color:transparent;
+}
+#fs_modal.prefs_modal .display_real_names_block_sample {
+	background:transparent;
+}
+.light_theme ts-message .message_content .message_sender {
+	color:var(--text) !important;
+}
+#fs_modal.prefs_modal #new_msg_snd_settings.disabled::after {
+	background:transparent;
+}
+.btn_link:focus,.btn_link:hover {
+	color:var(--primary);
+}
+#edit_topic_trigger {
+	color:var(--primary)
+}
+.c-member__display-name,.c-team__display-name,.c-usergroup__handle {
+	color:var(--text);
+}
+.c-member__secondary-name--medium {
+	color:var(--text)
+}
+.menu_member_header .member_details .member_current_status,.menu_member_header .member_details .member_timezone_value {
+	color:var(--text);
+}
+.menu_member_header .member_details .member_current_status a,.menu_member_header .member_details .member_timezone_value a { 
+	color:var(--primary);
+}
+.indifferent_grey{
+	color:var(--primary) !important;
+}
+.p-channel_sidebar__channel--im .c-presence--active, .p-channel_sidebar__channel--im-slackbot:before {
+	color:#865fc5 !important;
+}
+#presence.active:before{
+	color:#865fc5
+}
+.c-member .presence.active{
+	color:#865fc5
+}
+.presence.active{
+	color:#865fc5;
+}
+
+#whats_new_tab p {
+	color: var(--text);
+}
+.popover_menu .content {
+	background-color: var(--background-elevated);
+}
+#autocomplete_menu.search_menu .result_item_btn,#chat_input_tab_ui.search_menu .result_item_btn { 
+	color: var(--text-bright);
+}
+hr {
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+}
+.popover_menu { 
+	background-color:var(--background-elevated);
+	border-top:1px solid var(--background-elevated);
+	border-right:1px solid rgba(0,0,0,.07);
+	border-left:1px solid rgba(0,0,0,.07);
+	border-bottom:1px solid rgba(0,0,0,.07);
+}
+#autocomplete_menu li.highlighted .result_item_btn,#autocomplete_menu:not(.keyboard_active) li:focus .result_item_btn,#autocomplete_menu:not(.keyboard_active) li:hover .result_item_btn { 
+	background:var(--background-bright);
+}
+.msg_inline_attachment_column.column_border { 
+	background-color:#90503f;
 }
 
 h1, h2, h3, h4 {
@@ -51,7 +150,6 @@ h1, h2, h3, h4 {
    color: var(--text);
    z-index: 1;
 }
-
 
 /* Channel selector */
 /*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
@@ -136,15 +234,15 @@ ts-jumper input[type="text"],
 .p-channel_sidebar__link--selected:visited,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
-   background-color: var(--background) !important;
-   border: solid var(--border-bright);
+   background-color: var(--background-hover) !important;
    border-width: 1px 1px 1px 0;
 }
 
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover{
    background-color: var(--background-hover) !important;
-   border-color: transparent;
+   border: solid var(--border-dim);
+   border-width: 1px 1px 1px 0;
    color: var(--text) !important;
    height: 24px !important;
 }
@@ -228,7 +326,7 @@ ts-jumper ol li .member_real_name, ts-jumper ol li .view_name, ts-jumper ol li .
 
 .light_theme ts-message .message_content a.message_sender, #msg_input::-webkit-input-placeholder,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
-  color: var(--text) !important;
+  color: var(--text-bright) !important;
 }
 
 #msg_input, #primary_file_button {
@@ -396,8 +494,8 @@ ts-message .action_hover_container .btn_msg_action,
 
 .feature_name_tagging_client ts-message .mention, ts-message .mention,
 span.match {
-  border: 1px solid var(--border-bright) !important;
-  background-color: var(--background-elevated) !important;
+  border: 0px solid var(--text-bright) !important;
+  background-color: transparent !important;
   font-weight: bold;
   padding: 2px 4px;
   margin: 2px;
@@ -548,9 +646,9 @@ ts-message a.timestamp{
 .internal_user_group_link.ts_tip,
 ts-mention.ts_tip
 {
-   color: var(--text-bright);
-   background: var(--background-elevated);
-   border: 1px solid var(--border-dim);
+   color: #90503f;
+   background: transparent;
+   border: 0px solid var(--border-dim);
    padding: 2px 4px;
    margin: 2px;
    border-radius: 10px;
