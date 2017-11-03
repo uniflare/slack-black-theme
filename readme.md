@@ -1,10 +1,10 @@
-# Slack Black Theme
+# Slack Dark Pastel Theme
 
-A darker, more contrasty, Slack theme.
+A darker, more pastel-y, Slack theme.
 
 # Preview
 
-![Screenshot](https://cloud.githubusercontent.com/assets/7691630/24120350/4cbb643e-0d82-11e7-8353-5d4eb65dfd6a.png)
+![Screenshot](https://raw.githubusercontent.com/uniflare/screenshots/master/theme-dark-pastel.jpg)
 
 # Installing into Slack
 
@@ -15,7 +15,7 @@ Find your Slack's application directory.
 * Linux: `/usr/lib/slack/` (Debian-based)
 
 
-Open up the most recent version (e.g. `app-2.5.1`) then open
+Open up the most recent version (e.g. `app-2.8.2`) then open
 `resources\app.asar.unpacked\src\static\index.js`
 
 At the very bottom, add
@@ -96,7 +96,16 @@ NB: You'll have to do this every time Slack updates.
 Here's some example color variations you might like.
 
 ## Default
-![Default](https://cloud.githubusercontent.com/assets/7691630/24120350/4cbb643e-0d82-11e7-8353-5d4eb65dfd6a.png)
+![Default](https://raw.githubusercontent.com/uniflare/screenshots/master/theme-dark-pastel.jpg)
+```
+--primary: #78a2bf;
+--text: #9b9b9b;
+--background: #1e1e1e;
+--background-elevated: #252526;
+```
+
+## Black Contrast
+![Black Contrast](https://cloud.githubusercontent.com/assets/7691630/24120350/4cbb643e-0d82-11e7-8353-5d4eb65dfd6a.png)
 ```
 --primary: #09F;
 --text: #CCC;
