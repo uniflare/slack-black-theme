@@ -134,6 +134,52 @@ hr {
 .msg_inline_attachment_column.column_border { 
 	background-color:#90503f;
 }
+a.sidebar_menu_list_item {
+	color: var(--text);
+}
+.msg_lim_div {
+	background-image: none;
+	background-color:var(--background-bright);
+}
+.end_div_msg_lim {
+	background-image: none;
+	background-color:var(--background-bright);
+}
+#archives_end_div_msg_lim h1,#end_display_msg_lim h1 {
+	color:var(--text-bright);
+}
+#archives_end_div_msg_lim h2,#end_display_msg_lim h2 { 
+	color:var(--text);
+}
+#fs_modal .fs_modal_btn:hover {
+	color:var(--text-special);
+	background:transparent;
+}
+#fs_modal .fs_modal_btn:active {
+	color:var(--text-special);
+	background:var(--background-hover);
+}
+.attachment_group .media_caret {
+	color:var(--text-special);
+}
+#channel_browser .channel_browser_divider { 
+	color:var(--text-bright);
+	background:var(--background-hover);
+}
+#channel_browser #channel_list_container:not(.keyboard_active).not_scrolling .channel_browser_row:hover,#channel_browser .channel_browser_row.highlighted { 
+	background:var(--background-hover);
+}
+#channel_browser .channel_browser_row_header {
+	color:var(--text-bright);
+}
+#channel_browser .channel_browser_creator_name {
+	color:var(--text-bright);
+}
+
+.unread_msgs_loading {
+	background-color:transparent;
+	background-image:none;background-size:200px 200px;
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
@@ -550,13 +596,13 @@ code {
 }
 
 a, a:link, a:visited{
-  color: var(--text-special);
+  color: var(--text-special) !important;
 }
 ts-message a .mention{
   color: var(--text-special) !important;
 }
 a:hover{
-  color: var(--text-special) !important;
+  color: var(--text-bright) !important;
 }
 
 #msgs_scroller_div #end_display_div p {
