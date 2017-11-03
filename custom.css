@@ -186,6 +186,25 @@ a.sidebar_menu_list_item {
 .bot_message .message_sender,.bot_message .message_sender a {
 	color:var(--text-special);
 }
+.tab_complete_ui {
+	background:var(--background);
+}
+.tab_complete_ui .tab_complete_ui_header {
+	background:var(--background);
+}
+.app_preview_link_slug,.internal_member_link,.internal_user_group_link,ts-mention {
+	background:var(--background-hover);
+	color:var(--text-special);
+}
+.dense_theme ts-message .message_content .message_current_status {
+	border:0px solid #e8e8e8;
+}
+.comment .mention,.ql-editor .mention,ts-message .mention{
+	background:var(--background-hover);
+}
+.comment .mention:hover,.ql-editor .mention:hover,ts-message .mention:hover{
+	background-color:var(--background-hover);
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
