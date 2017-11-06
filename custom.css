@@ -117,6 +117,10 @@ limitations under the License.
 #autocomplete_menu.search_menu .result_item_btn,#chat_input_tab_ui.search_menu .result_item_btn { 
 	color: var(--text-bright);
 }
+#messages_unread_status #new_msg_info
+{
+	color: var(--text-bright);
+}
 hr {
 	border-top: 0px !important;
 	border-bottom: 0px !important;
@@ -169,41 +173,92 @@ a.sidebar_menu_list_item {
 #channel_browser #channel_list_container:not(.keyboard_active).not_scrolling .channel_browser_row:hover,#channel_browser .channel_browser_row.highlighted { 
 	background:var(--background-hover);
 }
-#channel_browser .channel_browser_row_header {
+#channel_browser .channel_browser_row_header 
+{
 	color:var(--text-bright);
 }
-#channel_browser .channel_browser_creator_name {
+#channel_browser .channel_browser_creator_name 
+{
 	color:var(--text-bright);
 }
 
-.unread_msgs_loading {
+.unread_msgs_loading 
+{
 	background-color:transparent;
 	background-image:none;background-size:200px 200px;
 }
-.attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name a,.attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name span {
+.attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name a,.attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name span 
+{
 	color:var(--text-special);
 }
-.bot_message .message_sender,.bot_message .message_sender a {
+.bot_message .message_sender,.bot_message .message_sender a
+{
 	color:var(--text-special);
 }
-.tab_complete_ui {
+.tab_complete_ui
+{
 	background:var(--background);
 }
-.tab_complete_ui .tab_complete_ui_header {
+.tab_complete_ui .tab_complete_ui_header
+{
 	background:var(--background);
 }
-.app_preview_link_slug,.internal_member_link,.internal_user_group_link,ts-mention {
+.app_preview_link_slug,.internal_member_link,.internal_user_group_link,ts-mention
+{
 	background:var(--background-hover);
 	color:var(--text-special);
 }
-.dense_theme ts-message .message_content .message_current_status {
+.dense_theme ts-message .message_content .message_current_status 
+{
 	border:0px solid #e8e8e8;
 }
-.comment .mention,.ql-editor .mention,ts-message .mention{
+.comment .mention,.ql-editor .mention,ts-message .mention
+{
 	background:var(--background-hover);
 }
-.comment .mention:hover,.ql-editor .mention:hover,ts-message .mention:hover{
+.comment .mention:hover,.ql-editor .mention:hover,ts-message .mention:hover
+{
 	background-color:var(--background-hover);
+}padding: 5px 5px 3px;
+
+#msgs_div .unread_divider .divider_label,#unread_msgs_div .unread_divider .divider_label 
+{
+	padding: 5px 5px 3px !important;
+}
+#msgs_div .unread_divider hr,#unread_msgs_div .unread_divider hr
+{
+	border-top:1px solid #865fc5;
+	border-bottom:none;
+	margin:0 18px -1px 0;
+}
+#msgs_div .unread_divider .divider_label,#unread_msgs_div .unread_divider .divider_label
+{
+	background:#865fc5;
+	padding:5px 5px 3px !important;
+	color:var(--text-bright);
+}
+#msgs_div .unread_divider.no_unreads hr,#unread_msgs_div .unread_divider.no_unreads hr
+{
+	border-top-color:#865fc5;
+}
+#msgs_div .unread_divider.no_unreads .divider_label,#unread_msgs_div .unread_divider.no_unreads .divider_label
+{
+	color:#865fc5;
+}
+#msgs_div .unread_divider.adjacent_to_date,#unread_msgs_div .unread_divider.adjacent_to_date
+{
+	background:0 0;
+}
+
+#msgs_div .unread_divider.no_unreads .divider_label
+{
+	background: #865fc5 !important;
+	color: var(--text-bright) !important;
+}
+
+#msgs_div .unread_divider.no_unreads hr{
+	border-top-color: #865fc5 !important;
+	border: 1px solid #865fc5 !important;
 }
 
 h1, h2, h3, h4 {
@@ -644,16 +699,6 @@ ts-message a.timestamp{
 }
 #channels_scroller.show_which_channel_is_active ul li.active .im_name{
   color: #fff !important;
-}
-
-#msgs_div .unread_divider.no_unreads .divider_label
-{
- background: #000 !important;
- color: #aaa !important;
-}
-
-#msgs_div .unread_divider.no_unreads hr{
-  border-top-color: #888 !important;
 }
 
 .flexpane_redesign #member_mentions {
