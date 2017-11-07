@@ -260,6 +260,31 @@ a.sidebar_menu_list_item {
 	border-top-color: #865fc5 !important;
 	border: 1px solid #865fc5 !important;
 }
+.channel_header { 
+	background:transparent;
+}
+
+*{
+	background:transparent;
+}
+body {
+	background: var(--background);
+}
+#footer{
+	background: var(--background);
+}
+#channel_topic_text,#edit_topic_inner,#edit_topic_contanier{
+	background: var(--background);
+	color: var(--text-bright);
+}
+#channel_topic_text:hover,#edit_topic_inner:hover,#edit_topic_contanier:hover{
+	background: var(--background-hover);
+	color: var(--text-bright);
+}
+#edit_topic_inner:before{
+	background: var(--background-hover);
+	border: var(--background);
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
