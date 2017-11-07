@@ -285,6 +285,29 @@ body {
 	background: var(--background-hover);
 	border: var(--background);
 }
+.comment .member{
+	color: inherit !important;
+}
+.flexpane_file_title .member,.flexpane_file_title .service_link { 
+	color: inherit !important;
+}
+.comment .special_formatting_quote .content,.comment_body
+{
+	color:var(--text);
+}
+.flexpane_file_title .file_action_list a
+{
+	color:var(--text);
+}
+.flexpane_file_title .title{
+	color:var(--text);
+}
+.flexpane_file_title .title{
+	color:var(--text);
+}
+.flexpane_file_title .title a{
+	color:var(--text);
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
@@ -593,6 +616,7 @@ ts-message .action_hover_container .btn_msg_action,
 
 .btn:hover:after {
    border-color: var(--border-bright);
+  color: var(--text-special) !important;
 }
 
 .action_hover_container {
