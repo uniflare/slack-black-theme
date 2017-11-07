@@ -309,6 +309,17 @@ body {
 	color:var(--text);
 }
 
+#file_comment_textarea.texty_comment_input,.comment_form .texty_comment_input,.edit_comment_form .texty_comment_input{
+	background:transparent;
+	color:var(--text);
+}
+.flexpane_file_title .file_action_list {
+	color:var(--text-bright);
+}
+.ts_icon:before,ts-icon:before{
+	color:var(--text-bright);
+}
+
 h1, h2, h3, h4 {
   color: var(--text);
 }
