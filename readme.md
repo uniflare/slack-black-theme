@@ -199,3 +199,7 @@ Instead of launching Slack normally, you'll need to enable developer mode to be 
 # License
 
 Apache 2.0
+
+```diff
+- Red Text Test
+```
